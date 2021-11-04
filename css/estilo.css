@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Roboto+Mono:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+    color: #fff;
+    padding: 50px;
+    border: 5px solid #fff;
+    border-radius: 20px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
+    background-size: 300% 300%;
+    animation: animacao_de_fundo 5s ease infinite alternate;
+}
+
+
+@keyframes animacao_de_fundo {
+    0%{
+        background-position: 0% 0%;
+    }
+    50%{
+        background-position: 50% 75%;
+    }
+    100%{
+        background-position: 25% 100%;
+    }
+}
